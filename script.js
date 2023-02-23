@@ -47,7 +47,6 @@ function text() {
                 i--
             }
     }
-    document.write(`Hello ${answers[2]}, you are ${answers[1]} years`)
 
 }
 text()
