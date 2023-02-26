@@ -7,7 +7,7 @@ const question = [
     'do you have a girlfriend?',
 ];
 
-let answers =[]
+let answers = []
 
 function memories() {
 
@@ -30,7 +30,7 @@ function memories() {
     
     if(answers[3] === 'no' || answers[3] === 'No'){
         gf.innerHTML = ``
-        my_gf.innerHTML = `I dont have girlfriend`
+        my_gf.innerHTML = `You dont have girlfriend`
     } else {
         let gf_answer = prompt('What is your girlfriends name?')
         gf.innerHTML = `${gf_answer}`
@@ -57,7 +57,77 @@ function text() {
             
         }
     }
-memories();
+// memories();
 
 
+function changeTheme () {
+
+    let icon = document.getElementById('Theme');
+    let secondIcon = true
+    icon.addEventListener('click', () => {
+
+        const img = icon.querySelector('#icon_change')
+        changeBg()
+        if(secondIcon) {
+            img.src = 'icon/sun.png'
+        } else {
+            img.src = 'icon/night-mode.png'
+        }
+        secondIcon = !secondIcon;
+
+        changeColor()
+
+    })
+
+}
+changeTheme()
+
+let secondColor = false
+
+function changeColor(){
+
+    const orange = document.getElementById('hobbies')
+    const blue = document.getElementById('years')
+    const yellow = document.getElementById('name')
+    const pink = document.getElementById('gf')
+    const purple = document.getElementById('pets')
+    if(secondColor) {
+        orange.style.backgroundColor = 'rgb(204, 85, 0)';
+        orange.style.color = '#dbdbdb'
+        blue.style.backgroundColor = 'rgb(0 0 128)';
+        blue.style.color = '#dbdbdb'
+        yellow.style.backgroundColor = '#cc9500';
+        yellow.style.color = '#dbdbdb'
+        pink.style.backgroundColor = '#d11d53';
+        pink.style.color = '#dbdbdb'
+        purple.style.backgroundColor = '#4B0082';
+        purple.style.color = '#dbdbdb'
+    }   else {
+        orange.style.backgroundColor = 'lightsalmon';
+        orange.style.color = 'black'
+        blue.style.backgroundColor = 'lightblue';
+        blue.style.color = 'black'
+        yellow.style.backgroundColor = '#ffffa0';
+        yellow.style.color = 'black'
+        pink.style.backgroundColor = 'lightpink';
+        pink.style.color = 'black'
+        purple.style.backgroundColor = 'rgb(223, 124, 223)';
+        purple.style.color = 'black'
+    }
+secondColor = !secondColor
+}
+
+let secondBg = false
+
+    function changeBg() {
+
+    let Bg = document.getElementById('first')
+
+    if(secondBg) {
+        Bg.style.backgroundImage = 'url(../img/dark.jpg)'
+    } else {
+        Bg.style.backgroundImage = 'url(img/light.jpg)'
+    }
+    secondBg = !secondBg
+}
 

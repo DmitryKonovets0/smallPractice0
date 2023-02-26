@@ -1,3 +1,4 @@
+@import url(../css/block.css);
 *{
 margin: 0;
 padding: 0;
@@ -6,17 +7,23 @@ box-sizing: border-box;
 .container{
     width: 1440px;
 }
-body{
-    background: url(../img/clark-tibbs-oqStl2L5oxI-unsplash.jpg) center center/cover no-repeat;
-}
-section{
+#first{
+    background-image: url(../img/dark.jpg);
     height: 840px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+
+}
+.logo_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .logo{
     border-radius: 20%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px ;
+    margin-top: 13px ;
     width: 100px;
     height: 100px;
 }
@@ -24,123 +31,15 @@ section{
     color: aliceblue;
     margin-top: 2px;
     font-size: 23px;
-    text-align: center;
     font-family: 'Bebas Neue', cursive;
 }
-.block{
-    margin-right: 2px;
-    margin-top: 27px;
-    display: flex;
-    opacity: 0.98;
-    
-}
-.hobbies{
-    margin-left: 6px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    border-radius: 10%;
-    background-color: orange;
-    width: 280px;
-    height: 280px;
-    margin-right: 8px
-}
-.hobbies_text{
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-}
-#my_hobbies{
-    font-family: 'Montserrat Alternates', sans-serif;
+#Theme{
     position: absolute;
-    margin-top: 110px;
-    font-size: 30px;
 }
-.years{
-    display: flex;
-    justify-content: center;
-    border-radius: 10%;
-    background-color:rgb(86 186 246);
-    width: 280px;
-    height: 280px;
-    margin-right: 8px
-}
-.years_text{
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    color: black;
-}
-#my_years{
-    font-family: 'Montserrat Alternates', sans-serif;
-    position: absolute;
-    margin-top: 110px;
-    font-size: 30px;
-}
-
-.name{
-    display: flex;
-    justify-content: center;
-    border-radius: 10%;
-    background-color: yellow;
-    width: 280px;
-    height: 280px;
-    margin-right: 8px
-}
-.name_text{
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-}
-#my_name{
-    font-family: 'Montserrat Alternates', sans-serif;
-    position: absolute;
-    margin-top: 110px;
-    font-size: 30px;
-}
-
-#gf{
-    display: flex;
-    justify-content: center;
-    border-radius: 10%;
-    background-color: pink;
-    width: 280px;
-    height: 280px;
-    margin-right: 8px
-}
-#gf_text{
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-}
-#my_gf{
-    font-family: 'Montserrat Alternates', sans-serif;
-    position: absolute;
-    margin-top: 110px;
-    font-size: 30px;
-}
-
-.pets{
-    display: flex;
-    justify-content: center;
-    border-radius: 10%;
-    background-color:rgb(223, 124, 223);
-    width: 280px;
-    height: 280px;
-    margin-right: 8px
-}
-#pets_text{
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    color:black;
-}
-#my_pets{
-    font-family: 'Montserrat Alternates', sans-serif;
-    position: absolute;
-    margin-top: 110px;
-    font-size: 30px;
+#icon_change{
+margin-left: 1200px;
+margin-top: 40px;
+width: 50px;
+height: 50px;
+transition: opacity 0.5s ease-in-out;
 }
