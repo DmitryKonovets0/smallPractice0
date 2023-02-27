@@ -6,6 +6,7 @@
     
 }
 #hobbies{
+    color: #dbdbdb;
     transition:  background-color 0.5s ease-in-out;
     margin-left: 6px;
     position: relative;
@@ -29,6 +30,7 @@
     font-size: 30px;
 }
 #years{
+    color: #dbdbdb;
     transition:  background-color 0.5s ease-in-out;
     display: flex;
     justify-content: center;
@@ -51,6 +53,7 @@
 }
 
 #name{
+    color: #dbdbdb;
     transition:  background-color 0.5s ease-in-out;
     display: flex;
     justify-content: center;
@@ -73,6 +76,7 @@
 }
 
 #gf{
+    color: #dbdbdb;
     transition:  background-color 0.5s ease-in-out;
     display: flex;
     justify-content: center;
@@ -83,6 +87,7 @@
     margin-right: 8px
 }
 #gf_text{
+    
     text-align: center;
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
@@ -95,6 +100,7 @@
 }
 
 #pets{
+    color: #dbdbdb;
     transition:  background-color 0.5s ease-in-out;
     display: flex;
     justify-content: center;
