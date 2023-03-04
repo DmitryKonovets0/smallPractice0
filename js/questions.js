@@ -34,11 +34,11 @@ function memories() {
         gf.innerHTML = `${gf_answer}`
         my_gf.innerHTML = `You girlfriend's name:`
     }
-    text()
+    textFun()
 return answers;
 }
 
-function text() {
+function textFun() {
 
     let pets = document.getElementById('my_pets')
 
@@ -55,4 +55,4 @@ function text() {
             
         }
     }
-// memories();
+memories();

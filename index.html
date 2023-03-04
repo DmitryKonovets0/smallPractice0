@@ -21,11 +21,20 @@
 <body>
     <section id="first">
         <div class="container">
-                <div class="logo_text">
+                <div class="head">
                     <img src="icon/javascript-logo.png" alt="" class="logo">
-                    <div class="text">Html+Css</div>
+                    <div id="text">Html+Css</div>
                         <div id="Theme">
                             <img src="icon/night-mode.png"alt="day" id="icon_change"">
+                        </div>
+                        <div class="random">
+                            <div id="random_num">
+                                <div id="text2"></div>
+                                <form>
+                                    <label>guess the numbers from 0 to 10:<input type="text" id="userInput"></label>
+                                    <button type="button" id ='btn_random'>Отправить</button>
+                                  </form>
+                                </div>
                         </div>
                 </div>
 
@@ -55,8 +64,9 @@
         </div>
     </section>
 
-
-    <script src="js/click.js"></script>
     <script src="js/questions.js"></script>
+    <script src="js/click.js"></script>
+    <script src="js/random.js"></script>
+
 </body>
 </html>
